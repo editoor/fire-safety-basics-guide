@@ -3,241 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fire Safety Basics: Essential Guide for Homes and Workplaces</title>
-<meta name="description" content="A neutral, practical guide to fire safety basics — common hazards, prevention tips, extinguisher types, alarms and building safety for homes and workplaces.">
+<title>Fire Safety: A Research-Based Guide to Prevention, Risk Assessment, and Emergency Preparedness</title>
 <style>
-:root{--red:#b71c1c;--red-dark:#7f0000;--accent:#ff6f00;--dark:#161616;--grey:#f5f5f5;--text:#333}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--text);line-height:1.7;background:#fff}
-a{color:var(--red);text-decoration:none}
-img{max-width:100%;height:auto;display:block}
-header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.nav{max-width:1140px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:52px;width:auto}
-.brand span{font-weight:800;font-size:1.25rem;color:var(--dark);letter-spacing:.5px}
-.nav-links{display:flex;gap:22px;align-items:center}
-.nav-links a{color:var(--dark);font-weight:600;font-size:.95rem}
-.nav-links a:hover{color:var(--red)}
-.btn{display:inline-block;background:var(--red);color:#fff!important;padding:12px 28px;border-radius:8px;font-weight:700;transition:.25s;border:none;cursor:pointer}
-.btn:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 20px rgba(183,28,28,.35)}
-.btn-outline{background:transparent;border:2px solid #fff;color:#fff!important}
-.hero{background:linear-gradient(rgba(10,10,10,.72),rgba(10,10,10,.55)),url('hero-hydrant.webp') center/cover no-repeat;color:#fff;padding:110px 20px;text-align:center}
-.hero-inner{max-width:880px;margin:auto}
-.hero h1{font-size:2.7rem;line-height:1.25;margin-bottom:18px;font-weight:800}
-.hero p{font-size:1.15rem;opacity:.94;margin-bottom:30px}
-.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.badges{display:flex;gap:26px;justify-content:center;margin-top:34px;flex-wrap:wrap;font-size:.92rem;opacity:.92}
-.badges b{color:var(--accent)}
-.stats{background:var(--red);color:#fff;padding:34px 20px}
-.stats-inner{max-width:1140px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
-.stats b{font-size:2rem;display:block}
-.stats span{font-size:.9rem;opacity:.9}
-section{padding:64px 20px}
-.wrap{max-width:1140px;margin:auto}
-h2{font-size:2rem;margin-bottom:14px;color:var(--dark);font-weight:800}
-h2 .u{color:var(--red)}
-.lead{font-size:1.08rem;color:#555;max-width:780px;margin-bottom:34px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-.split img{border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.14)}
-.split h3{color:var(--dark);margin:18px 0 8px;font-size:1.2rem}
-.tick{list-style:none;margin-top:14px}
-.tick li{padding:8px 0 8px 34px;position:relative}
-.tick li::before{content:"✔";position:absolute;left:0;color:var(--red);font-weight:800}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.card{background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 8px 26px rgba(0,0,0,.08);border-top:4px solid var(--red);transition:.25s}
-.card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(0,0,0,.13)}
-.card .ico{font-size:2.2rem;margin-bottom:12px}
-.card h3{color:var(--dark);margin-bottom:10px;font-size:1.15rem}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.step{background:#fff;border-radius:14px;padding:34px 22px 28px;box-shadow:0 8px 26px rgba(0,0,0,.08);position:relative}
-.step .n{position:absolute;top:-18px;left:22px;background:var(--red);color:#fff;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
-.step h3{color:var(--dark);margin:8px 0;font-size:1.05rem}
-.faq details{background:#fff;border:1px solid #e5e5e5;border-radius:10px;margin-bottom:12px;padding:18px 22px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.faq summary{font-weight:700;color:var(--dark);cursor:pointer;font-size:1.02rem}
-.faq summary::marker{color:var(--red)}
-.faq p{margin-top:10px;color:#555}
-.cta-band{background:linear-gradient(120deg,var(--red-dark),var(--red));color:#fff;text-align:center;padding:60px 20px;border-radius:18px;max-width:1140px;margin:0 auto 64px}
-.cta-band h2{color:#fff}
-.cta-band p{opacity:.92;margin-bottom:26px}
-footer{background:var(--dark);color:#bbb;padding:50px 20px 26px}
-.foot{max-width:1140px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
-.foot img{height:54px;margin-bottom:14px;background:#fff;border-radius:8px;padding:6px}
-.foot h4{color:#fff;margin-bottom:14px}
-.foot a{color:#bbb;display:block;padding:4px 0}
-.foot a:hover{color:#fff}
-.copy{max-width:1140px;margin:34px auto 0;border-top:1px solid #333;padding-top:18px;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-@media(max-width:820px){
-.hero h1{font-size:2rem}
-.split,.cards,.steps,.foot{grid-template-columns:1fr}
-.stats-inner{grid-template-columns:repeat(2,1fr)}
-.nav-links{display:none}
-}
+body{font-family:Georgia,'Times New Roman',serif;line-height:1.8;color:#1a1a1a;max-width:800px;margin:0 auto;padding:20px;background:#fff}
+h1{font-size:1.8rem;line-height:1.3;margin-bottom:10px}
+h2{font-size:1.3rem;margin-top:35px;border-bottom:1px solid #ddd;padding-bottom:5px}
+h3{font-size:1.1rem;margin-top:25px}
+.abstract{background:#f8f9fa;padding:20px;border-left:4px solid #2c3e50;margin:20px 0;font-style:italic}
+.keywords{margin:15px 0;font-size:.95rem}
+ul,ol{margin:10px 0;padding-left:25px}
+li{margin-bottom:8px}
+a{color:#1a5276;text-decoration:underline}
+.research-note{background:#fef9e7;padding:15px;border:1px solid #f9e79f;margin-top:30px;font-size:.9rem}
+@media(max-width:600px){body{padding:15px}h1{font-size:1.4rem}}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <span class="brand"><img src="logo.png" alt="Fire safety guide logo"><span>Fire Safety Guide</span></span>
-    <nav class="nav-links">
-      <a href="#why">Why It Matters</a>
-      <a href="#hazards">Hazards</a>
-      <a href="#tips">Safety Tips</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn" href="#tips">Safety Checklist</a>
-    </nav>
-  </div>
-</header>
+<h1>Fire Safety: A Research-Based Guide to Fire Prevention, Risk Assessment, and Emergency Preparedness</h1>
 
-<div class="hero">
-  <div class="hero-inner">
-    <h1>Fire Safety Basics: An Essential Guide for Homes and Workplaces</h1>
-    <p>Fire safety is not just a technical topic — it is a daily life skill. From crowded apartment blocks to busy workshops, understanding how fires start and what stops them protects lives, homes and livelihoods. Readers looking for region-specific advice can start with resources on <a href="https://nicofire.com/" style="color:#ffb74d;font-weight:700">Fire safety in Nepal</a>.</p>
-    <div class="hero-cta">
-      <a class="btn" href="#why">Start Reading</a>
-      <a class="btn btn-outline" href="#tips">See Safety Tips</a>
-    </div>
-    <div class="badges"><span><b>911 / 999 / 112</b> know your local number</span><span><b>#1</b> cause: electrical faults</span><span><b>2</b> escape routes per room</span><span><b>30</b> seconds to react</span></div>
-  </div>
+<div class="abstract">
+<strong>Abstract</strong><br>
+Fire safety is an essential component of public health, occupational safety, and property protection. Fires can cause serious injuries, loss of life, environmental damage, and significant economic disruption. Effective fire safety requires a combination of preventive measures, risk assessment, emergency planning, fire detection systems, and public awareness. This research-based article examines the fundamental principles of fire safety, common causes of fires, preventive strategies, and emergency response procedures. The findings emphasize that a proactive approach to fire prevention, supported by regular inspections and practical training, can reduce fire-related risks and improve emergency preparedness.
 </div>
 
-<div class="stats">
-  <div class="stats-inner">
-    <div><b>3–5</b><span>Minutes for a room fire to reach flashover</span></div>
-    <div><b>#1</b><span>Electrical faults — the leading cause of home fires</span></div>
-    <div><b>2</b><span>Minimum escape routes recommended for every room</span></div>
-    <div><b>5</b><span>Extinguisher classes used worldwide (A, B, C, D, K)</span></div>
-  </div>
+<div class="keywords">
+<strong>Keywords:</strong> Fire safety, fire prevention, fire hazards, emergency preparedness, fire risk assessment, fire protection systems, occupational safety.
 </div>
 
-<section id="why">
-  <div class="wrap split">
-    <div>
-      <h2>Why <span class="u">Fire Safety</span> Matters Everywhere</h2>
-      <p class="lead">Dense urban housing, aging wiring, gas kitchens and dry seasonal air combine into a serious fire risk in many regions. That is why <a href="https://nicofire.com/">Fire Safety</a> deserves a place in every household routine — yet many homes still have no extinguisher, no alarm and no practiced escape plan.</p>
-      <p>The encouraging part is that basic protection is affordable and simple. A certified extinguisher, a working smoke alarm and a short family drill together cost less than a smartphone — and they safeguard everything a household owns. Schools, offices and small workshops benefit just as much from the same fundamentals.</p>
-      <ul class="tick">
-        <li>Electrical short-circuits are the number one cause of urban fires</li>
-        <li>LPG and kitchen fires spread in seconds without an extinguisher nearby</li>
-        <li>Early detection with alarms roughly doubles survival chances</li>
-        <li>Certified fire protection guidance is available in most regions</li>
-      </ul>
-    </div>
-    <img src="fire-risk-assessment.webp" alt="Fire risk assessment for fire safety">
-  </div>
-</section>
+<h2>1. Introduction</h2>
+<p>Fire has played an important role in human development, supporting activities such as cooking, heating, manufacturing, and energy production. However, uncontrolled fire remains a significant safety hazard in homes, workplaces, commercial buildings, and industrial facilities. A fire can spread rapidly, producing extreme heat, toxic smoke, and dangerous conditions that make evacuation difficult.</p>
+<p>Fire safety refers to the policies, procedures, equipment, and practices designed to prevent fires and minimize their consequences. It involves identifying potential hazards, maintaining electrical and heating systems, storing combustible materials safely, installing appropriate detection equipment, and preparing occupants to respond effectively during emergencies. Understanding <a href="https://nicofire.com/">fire safety</a> principles is fundamental for anyone responsible for building management or workplace safety.</p>
+<p>Modern fire safety management emphasizes prevention rather than relying exclusively on firefighting after an incident occurs. A well-designed safety program combines engineering controls, administrative procedures, employee training, and regular maintenance.</p>
 
-<section id="hazards" style="background:var(--grey)">
-  <div class="wrap">
-    <h2>Common Fire Hazards in <span class="u">Homes & Businesses</span></h2>
-    <p class="lead">Recognizing these everyday risks is the first step toward genuine fire safety.</p>
-    <div class="cards">
-      <div class="card"><div class="ico">🔌</div><h3>Faulty Electrical Wiring</h3><p>Overloaded circuits, loose connections and cheap extension boards spark a large share of urban fires each year. Get wiring inspected periodically and never daisy-chain heaters or high-load appliances on a single socket.</p></div>
-      <div class="card"><div class="ico">🍳</div><h3>Kitchen & LPG Fires</h3><p>Unattended cooking and leaking gas pipes are among the deadliest household risks. Check rubber pipes for cracks regularly and keep a fire extinguisher within arm's reach of every kitchen.</p></div>
-      <div class="card"><div class="ico">🕯️</div><h3>Candles, Oil Lamps & Heaters</h3><p>Open flames from candles and oil lamps, plus winter heaters placed near curtains, ignite astonishingly fast. Never leave them unattended, and keep a metal-lidded container of sand nearby wherever open flames are used.</p></div>
-      <div class="card"><div class="ico">🏭</div><h3>Industrial & Workshop Risks</h3><p>Flammable liquids, welding sparks and combustible dust demand engineered protection — hydrant systems and automatic suppression for high-risk sites, plus trained staff.</p></div>
-      <div class="card"><div class="ico">🔥</div><h3>Dry Season Wildfires</h3><p>Seasonal wildfires threaten hillside and rural settlements every year. Clear dry brush from around property lines, avoid open burning on windy days, and report smoke to authorities immediately.</p></div>
-      <div class="card"><div class="ico">🏢</div><h3>Blocked Exits in Buildings</h3><p>Locked stairwells and cluttered corridors trap occupants during emergencies. Every building needs marked, unobstructed escape routes and clearly visible fire safety signage.</p></div>
-    </div>
-  </div>
-</section>
+<h2>2. Understanding the Science of Fire</h2>
+<p>Fire is a combustion process that occurs when a combustible material reacts with an oxidizing agent, usually oxygen, in the presence of sufficient heat. The traditional fire triangle identifies three essential elements required for combustion:</p>
+<ul>
+<li><strong>Heat:</strong> An ignition source that raises a material to the temperature required for combustion.</li>
+<li><strong>Fuel:</strong> A combustible substance, such as paper, wood, gasoline, cooking oil, or certain gases.</li>
+<li><strong>Oxygen:</strong> An oxidizing agent that supports the combustion process.</li>
+</ul>
+<p>A fourth element, the chemical chain reaction, is included in the fire tetrahedron. Fire prevention involves controlling one or more of these elements. For example, keeping combustible materials away from ignition sources reduces the likelihood of a fire.</p>
 
-<section id="tips">
-  <div class="wrap split">
-    <img src="smoke-vs-alarm.webp" alt="Smoke detectors and fire alarm systems for fire safety">
-    <div>
-      <h2>7 Practical <span class="u">Fire Safety</span> Tips for Every Home</h2>
-      <p class="lead">Small habits that turn fire safety into a daily practice rather than a one-time purchase.</p>
-      <ul class="tick">
-        <li>Install smoke detectors in kitchens, hallways and stairwells — test them every month</li>
-        <li>Keep an ABC-type fire extinguisher on each floor and learn PASS (Pull, Aim, Squeeze, Sweep)</li>
-        <li>Switch off heaters and unplug chargers before sleeping or leaving home</li>
-        <li>Store LPG cylinders upright in ventilated areas and inspect pipes for leaks</li>
-        <li>Keep a metal-lidded bucket of sand near candles and open-flame spots</li>
-        <li>Plan two escape routes from every room and practice with family twice a year</li>
-        <li>Save your local fire and police emergency numbers in every phone</li>
-      </ul>
-    </div>
-  </div>
-</section>
+<h2>3. Common Causes of Fire Incidents</h2>
+<p>Fire incidents can occur in almost any environment, but several hazards appear repeatedly in fire investigations. Research into <a href="https://nicofire.com/">Fire safety in Nepal</a> and other regions consistently identifies similar patterns of causation.</p>
 
-<section style="background:var(--grey)">
-  <div class="wrap">
-    <h2>If Fire Breaks Out — <span class="u">Act in Seconds</span></h2>
-    <p class="lead">Panic causes more harm than flames. These four steps save lives when every second counts.</p>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><h3>Alert Everyone</h3><p>Shout "Fire!" and trigger the alarm. Wake the whole house or floor immediately — seconds matter.</p></div>
-      <div class="step"><div class="n">2</div><h3>Try to Contain</h3><p>If the fire is small and you have an extinguisher, use the PASS technique. Never risk your life for property.</p></div>
-      <div class="step"><div class="n">3</div><h3>Evacuate Low</h3><p>Stay low under smoke, feel doors for heat before opening them, and always use stairs — never elevators.</p></div>
-      <div class="step"><div class="n">4</div><h3>Call for Help</h3><p>Once outside and safe, call your local fire emergency number. Never re-enter a burning building for belongings.</p></div>
-    </div>
-  </div>
-</section>
+<h3>3.1 Electrical Faults</h3>
+<p>Damaged wiring, overloaded circuits, defective electrical appliances, loose connections, and improperly installed equipment can generate heat or sparks. Electrical installations should be inspected by qualified professionals, and damaged cables should be removed from service until repaired.</p>
 
-<section>
-  <div class="wrap split">
-    <div>
-      <h2>Choosing the Right <span class="u">Fire Safety Equipment</span></h2>
-      <p class="lead">Awareness works best when paired with the right tools. Here is what households and small businesses should know before buying anything.</p>
-      <ul class="tick">
-        <li>Fire extinguishers — ABC dry powder covers most home fires; CO₂ suits electrical fires; foam handles flammable liquids</li>
-        <li>Smoke and heat detectors — photoelectric alarms for living areas, heat alarms for kitchens</li>
-        <li>Fire blankets — an inexpensive way to smother small kitchen fires</li>
-        <li>Hydrant and suppression systems — for larger buildings, factories and institutions</li>
-        <li>Refilling and servicing — extinguishers need annual professional servicing and refilling after any use</li>
-      </ul>
-      <p style="margin-top:18px">Look for ISO or CE certified products from established fire safety suppliers, and ask for a demonstration so every family member knows how the equipment works.</p>
-    </div>
-    <img src="alarm-importance.webp" alt="Importance of fire alarm systems">
-  </div>
-</section>
+<h3>3.2 Cooking-Related Fires</h3>
+<p>Cooking equipment is a common source of residential fire hazards. Unattended cooking, overheating oil, grease accumulation, and combustible materials placed near burners can cause fires. Kitchen safety requires continuous attention while cooking and regular cleaning of appliances.</p>
 
-<section id="faq" style="background:var(--grey)">
-  <div class="wrap faq" style="max-width:820px">
-    <h2><span class="u">Fire Safety</span> FAQs</h2>
-    <p class="lead">Common questions about fire safety, answered plainly.</p>
-    <details><summary>What is the most important fire safety device for a home?</summary><p>An ABC-type fire extinguisher plus a smoke alarm. Together they cover early detection and first response — the two pillars of home fire safety.</p></details>
-    <details><summary>How do I improve fire safety in my apartment building?</summary><p>Push for extinguishers on every floor, keep stairwells clear, install a building-wide alarm system, and organize an annual evacuation drill. Larger complexes may need a hydrant system as well.</p></details>
-    <details><summary>Where can I buy certified fire safety equipment?</summary><p>Certified extinguishers, alarms and hydrant systems are available from specialist fire safety suppliers in most cities and online. Always verify certification marks before purchasing.</p></details>
-    <details><summary>How often should fire extinguishers be serviced?</summary><p>Do a visual check monthly, arrange professional servicing once a year, and refill immediately after any use to keep the unit rescue-ready.</p></details>
-    <details><summary>What number do I call for a fire emergency?</summary><p>Call your local fire emergency number — for example 911 in the US, 999 in the UK, or 112 across much of Europe. Save it in every family member's phone today.</p></details>
-  </div>
-</section>
+<h3>3.3 Heating Equipment and Open Flames</h3>
+<p>Portable heaters, fireplaces, candles, and other open-flame sources can ignite nearby combustible materials. Heaters should be positioned according to manufacturer instructions and kept away from curtains, furniture, and bedding.</p>
 
-<div class="wrap">
-  <div class="cta-band">
-    <h2>Key Takeaways</h2>
-    <p>✓ Electrical faults and gas leaks cause most household fires — inspect both regularly.<br>
-    ✓ One ABC extinguisher per floor, a smoke alarm, and a practiced escape plan cover the basics.<br>
-    ✓ In an emergency: alert everyone, contain only small fires, evacuate low, and call your local emergency number.<br>
-    ✓ Service extinguishers annually and replace expired units without delay.</p>
-  </div>
+<h3>3.4 Flammable Liquids and Gases</h3>
+<p>Petrol, solvents, paints, and certain industrial chemicals can produce flammable vapors. These materials must be stored in suitable containers in locations that meet applicable ventilation and fire protection requirements.</p>
+
+<h2>4. Fire Risk Assessment and Prevention</h2>
+<p>Fire risk assessment is a systematic process for identifying hazards, evaluating the likelihood and consequences of a fire, and determining appropriate control measures:</p>
+<ol>
+<li><strong>Identify fire hazards:</strong> Examine electrical systems, heating equipment, cooking areas, and combustible materials.</li>
+<li><strong>Identify people at risk:</strong> Consider employees, residents, visitors, and those needing evacuation assistance.</li>
+<li><strong>Evaluate existing controls:</strong> Check alarms, detectors, extinguishers, emergency lighting, and exit routes.</li>
+<li><strong>Determine additional measures:</strong> Introduce safeguards to eliminate hazards or reduce fire probability.</li>
+<li><strong>Document and review:</strong> Record findings and reassess after changes to building use or occupancy.</li>
+</ol>
+
+<h2>5. Fire Detection and Protection Systems</h2>
+
+<h3>5.1 Smoke and Heat Detectors</h3>
+<p>Smoke alarms provide early warning when smoke enters the sensing chamber. They must be tested regularly, with batteries replaced as specified by the manufacturer.</p>
+
+<h3>5.2 Fire Extinguishers</h3>
+<p>Portable fire extinguishers are designed for specific categories of fire. The correct extinguisher must be selected according to the fuel involved. Extinguishers should be accessible, properly maintained, and used only by trained individuals.</p>
+
+<h3>5.3 Automatic Sprinkler Systems</h3>
+<p>Automatic sprinkler systems can control or suppress many fires when properly designed and maintained. They reduce fire growth and provide additional evacuation time.</p>
+
+<h2>6. Emergency Evacuation and Preparedness</h2>
+<p>An effective emergency response plan helps occupants leave dangerous areas quickly and safely. Plans should include clearly marked exits, designated assembly points, procedures for alerting occupants, arrangements for those needing assistance, and regular evacuation drills. Elevators should generally not be used during fires.</p>
+
+<h2>7. Recommendations</h2>
+<ol>
+<li>Conduct regular fire risk assessments and update them when conditions change.</li>
+<li>Install suitable detection, alarm, and protection systems per applicable requirements.</li>
+<li>Arrange professional inspections of electrical systems and safety equipment.</li>
+<li>Keep emergency exits, corridors, and stairwells clear at all times.</li>
+<li>Store flammable materials safely and control ignition sources.</li>
+<li>Provide fire safety training and conduct evacuation drills.</li>
+<li>Maintain records of inspections, training, and corrective actions.</li>
+</ol>
+
+<h2>8. Conclusion</h2>
+<p>Fire safety is a shared responsibility involving building owners, employers, residents, and emergency services. A layered approach combining technical safeguards, management responsibilities, occupant education, and continuous improvement offers the most reliable path to reducing fire-related risks and protecting lives and property.</p>
+
+<div class="research-note">
+<strong>Research note:</strong> This article is a research-based educational review of established fire safety principles. Before academic submission, verify applicable standards and regulatory requirements for the relevant jurisdiction.
 </div>
-
-<footer>
-  <div class="foot">
-    <div>
-      <img src="logo.png" alt="Fire safety guide logo">
-      <p>An independent informational resource about fire safety — hazards, prevention tips, equipment basics and emergency guidance.</p>
-    </div>
-    <div>
-      <h4>Guide Sections</h4>
-      <a href="#why">Why It Matters</a>
-      <a href="#hazards">Common Hazards</a>
-      <a href="#tips">Safety Tips</a>
-      <a href="#faq">FAQs</a>
-    </div>
-    <div>
-      <h4>Emergency</h4>
-      <a href="#faq">Emergency Numbers</a>
-      <a href="#tips">Prevention Checklist</a>
-      <a href="#faq">Read the FAQs</a>
-      <a href="#why">Why It Matters</a>
-    </div>
-  </div>
-  <div class="copy"><span>© 2026 Fire Safety Guide — an independent educational resource.</span><span>Fire Safety · Prevention · Preparedness</span></div>
-</footer>
 
 </body>
 </html>
