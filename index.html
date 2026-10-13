@@ -1,106 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fire Safety: A Research-Based Guide to Prevention, Risk Assessment, and Emergency Preparedness</title>
-<style>
-body{font-family:Georgia,'Times New Roman',serif;line-height:1.8;color:#1a1a1a;max-width:800px;margin:0 auto;padding:20px;background:#fff}
-h1{font-size:1.8rem;line-height:1.3;margin-bottom:10px}
-h2{font-size:1.3rem;margin-top:35px;border-bottom:1px solid #ddd;padding-bottom:5px}
-h3{font-size:1.1rem;margin-top:25px}
-.abstract{background:#f8f9fa;padding:20px;border-left:4px solid #2c3e50;margin:20px 0;font-style:italic}
-.keywords{margin:15px 0;font-size:.95rem}
-ul,ol{margin:10px 0;padding-left:25px}
-li{margin-bottom:8px}
-a{color:#1a5276;text-decoration:underline}
-.research-note{background:#fef9e7;padding:15px;border:1px solid #f9e79f;margin-top:30px;font-size:.9rem}
-@media(max-width:600px){body{padding:15px}h1{font-size:1.4rem}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Safety: A Research-Based Guide to Prevention, Risk Assessment, and Emergency Preparedness</title>
+    <meta name="description" content="A comprehensive research-based guide examining fire prevention principles, industrial hazards, detection equipment, and emergency evacuation management.">
+    <style>
+        :root {
+            --bg-canvas: #f8fafc;
+            --sheet-white: #ffffff;
+            --brand-dark: #0f172a;
+            --brand-navy: #1e293b;
+            --brand-crimson: #dc2626;
+            --brand-crimson-hover: #b91c1c;
+            --brand-amber: #d97706;
+            --text-lead: #0f172a;
+            --text-paragraph: #334155;
+            --text-muted: #64748b;
+            --border-line: #e2e8f0;
+            --callout-tint: #fef2f2;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: var(--bg-canvas); color: var(--text-paragraph); line-height: 1.85; font-size: 1.05rem; }
+        .whitepaper-masthead { background: var(--sheet-white); border-bottom: 2px solid var(--border-line); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
+        .masthead-inner { max-width: 940px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+        .tech-brand { font-size: 1.25rem; font-weight: 900; color: var(--brand-dark); text-transform: uppercase; letter-spacing: -0.5px; }
+        .tech-brand span { color: var(--brand-crimson); }
+        .paper-badge { background: #f1f5f9; color: var(--brand-navy); border: 1px solid var(--border-line); padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .whitepaper-hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 65px 24px 55px 24px; text-align: center; }
+        .hero-container { max-width: 900px; margin: 0 auto; }
+        .doc-classification { color: #f87171; text-transform: uppercase; font-weight: 800; font-size: 0.82rem; letter-spacing: 2px; display: inline-block; margin-bottom: 12px; }
+        .hero-container h1 { font-size: 2.5rem; line-height: 1.25; font-weight: 900; color: #ffffff; margin-bottom: 16px; }
+        .hero-container p { font-size: 1.15rem; color: #cbd5e1; max-width: 760px; margin: 0 auto; line-height: 1.65; }
+        .paper-wrapper { max-width: 940px; margin: 40px auto 75px auto; padding: 0 20px; }
+        .document-card { background: var(--sheet-white); border-radius: 12px; padding: 50px 48px; border: 1px solid var(--border-line); box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03); }
+        .abstract-panel { background: #f8fafc; border-left: 4px solid var(--brand-navy); padding: 24px 28px; border-radius: 0 8px 8px 0; margin-bottom: 40px; }
+        .abstract-panel h3 { font-size: 1.1rem; text-transform: uppercase; color: var(--brand-dark); letter-spacing: 1px; margin-bottom: 10px; font-weight: 800; }
+        .abstract-panel p { font-size: 1rem; color: var(--text-paragraph); margin-bottom: 0; line-height: 1.75; }
+        .document-card h2 { font-size: 1.75rem; font-weight: 800; color: var(--text-lead); margin-top: 40px; margin-bottom: 16px; line-height: 1.35; border-bottom: 1px solid var(--border-line); padding-bottom: 8px; }
+        .document-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--brand-navy); margin-top: 28px; margin-bottom: 12px; }
+        .document-card p { margin-bottom: 22px; font-size: 1.05rem; color: var(--text-paragraph); }
+        .document-card a { color: var(--brand-crimson); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+        .document-card a:hover { color: var(--brand-crimson-hover); }
+        .document-card ul, .document-card ol { margin: 18px 0 24px 24px; }
+        .document-card li { margin-bottom: 10px; padding-left: 4px; }
+        .hazard-note-box { background: var(--callout-tint); border-left: 4px solid var(--brand-crimson); padding: 22px 24px; border-radius: 0 8px 8px 0; margin: 32px 0; }
+        .hazard-note-box h4 { color: #991b1b; font-size: 1.05rem; margin-bottom: 6px; font-weight: 800; }
+        .hazard-note-box p { margin-bottom: 0; color: #7f1d1d; font-size: 0.98rem; }
+        .synthesis-card { margin-top: 45px; padding: 30px; background: #f8fafc; border: 1px solid var(--border-line); border-radius: 10px; }
+        .synthesis-card h3 { font-size: 1.35rem; color: var(--brand-dark); margin-top: 0; margin-bottom: 10px; font-weight: 800; }
+        .synthesis-card p { font-size: 0.98rem; color: var(--text-paragraph); margin-bottom: 12px; }
+        .synthesis-card p:last-child { margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted); font-style: italic; }
+        footer { background: var(--brand-dark); color: #94a3b8; padding: 40px 20px; text-align: center; font-size: 0.9rem; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+        @media (max-width: 768px) { .document-card { padding: 28px 20px; } .hero-container h1 { font-size: 2rem; } }
+    </style>
 </head>
 <body>
-
-<h1>Fire Safety: A Research-Based Guide to Fire Prevention, Risk Assessment, and Emergency Preparedness</h1>
-
-<div class="abstract">
-<strong>Abstract</strong><br>
-Fire safety is an essential component of public health, occupational safety, and property protection. Fires can cause serious injuries, loss of life, environmental damage, and significant economic disruption. Effective fire safety requires a combination of preventive measures, risk assessment, emergency planning, fire detection systems, and public awareness. This research-based article examines the fundamental principles of fire safety, common causes of fires, preventive strategies, and emergency response procedures. The findings emphasize that a proactive approach to fire prevention, supported by regular inspections and practical training, can reduce fire-related risks and improve emergency preparedness.
-</div>
-
-<div class="keywords">
-<strong>Keywords:</strong> Fire safety, fire prevention, fire hazards, emergency preparedness, fire risk assessment, fire protection systems, occupational safety.
-</div>
-
-<h2>1. Introduction</h2>
-<p>Fire has played an important role in human development, supporting activities such as cooking, heating, manufacturing, and energy production. However, uncontrolled fire remains a significant safety hazard in homes, workplaces, commercial buildings, and industrial facilities. A fire can spread rapidly, producing extreme heat, toxic smoke, and dangerous conditions that make evacuation difficult.</p>
-<p>Fire safety refers to the policies, procedures, equipment, and practices designed to prevent fires and minimize their consequences. It involves identifying potential hazards, maintaining electrical and heating systems, storing combustible materials safely, installing appropriate detection equipment, and preparing occupants to respond effectively during emergencies. Understanding <a href="https://nicofire.com/">fire safety</a> principles is fundamental for anyone responsible for building management or workplace safety.</p>
-<p>Modern fire safety management emphasizes prevention rather than relying exclusively on firefighting after an incident occurs. A well-designed safety program combines engineering controls, administrative procedures, employee training, and regular maintenance.</p>
-
-<h2>2. Understanding the Science of Fire</h2>
-<p>Fire is a combustion process that occurs when a combustible material reacts with an oxidizing agent, usually oxygen, in the presence of sufficient heat. The traditional fire triangle identifies three essential elements required for combustion:</p>
-<ul>
-<li><strong>Heat:</strong> An ignition source that raises a material to the temperature required for combustion.</li>
-<li><strong>Fuel:</strong> A combustible substance, such as paper, wood, gasoline, cooking oil, or certain gases.</li>
-<li><strong>Oxygen:</strong> An oxidizing agent that supports the combustion process.</li>
-</ul>
-<p>A fourth element, the chemical chain reaction, is included in the fire tetrahedron. Fire prevention involves controlling one or more of these elements. For example, keeping combustible materials away from ignition sources reduces the likelihood of a fire.</p>
-
-<h2>3. Common Causes of Fire Incidents</h2>
-<p>Fire incidents can occur in almost any environment, but several hazards appear repeatedly in fire investigations. Research into <a href="https://nicofire.com/">Fire safety in Nepal</a> and other regions consistently identifies similar patterns of causation.</p>
-
-<h3>3.1 Electrical Faults</h3>
-<p>Damaged wiring, overloaded circuits, defective electrical appliances, loose connections, and improperly installed equipment can generate heat or sparks. Electrical installations should be inspected by qualified professionals, and damaged cables should be removed from service until repaired.</p>
-
-<h3>3.2 Cooking-Related Fires</h3>
-<p>Cooking equipment is a common source of residential fire hazards. Unattended cooking, overheating oil, grease accumulation, and combustible materials placed near burners can cause fires. Kitchen safety requires continuous attention while cooking and regular cleaning of appliances.</p>
-
-<h3>3.3 Heating Equipment and Open Flames</h3>
-<p>Portable heaters, fireplaces, candles, and other open-flame sources can ignite nearby combustible materials. Heaters should be positioned according to manufacturer instructions and kept away from curtains, furniture, and bedding.</p>
-
-<h3>3.4 Flammable Liquids and Gases</h3>
-<p>Petrol, solvents, paints, and certain industrial chemicals can produce flammable vapors. These materials must be stored in suitable containers in locations that meet applicable ventilation and fire protection requirements.</p>
-
-<h2>4. Fire Risk Assessment and Prevention</h2>
-<p>Fire risk assessment is a systematic process for identifying hazards, evaluating the likelihood and consequences of a fire, and determining appropriate control measures:</p>
-<ol>
-<li><strong>Identify fire hazards:</strong> Examine electrical systems, heating equipment, cooking areas, and combustible materials.</li>
-<li><strong>Identify people at risk:</strong> Consider employees, residents, visitors, and those needing evacuation assistance.</li>
-<li><strong>Evaluate existing controls:</strong> Check alarms, detectors, extinguishers, emergency lighting, and exit routes.</li>
-<li><strong>Determine additional measures:</strong> Introduce safeguards to eliminate hazards or reduce fire probability.</li>
-<li><strong>Document and review:</strong> Record findings and reassess after changes to building use or occupancy.</li>
-</ol>
-
-<h2>5. Fire Detection and Protection Systems</h2>
-
-<h3>5.1 Smoke and Heat Detectors</h3>
-<p>Smoke alarms provide early warning when smoke enters the sensing chamber. They must be tested regularly, with batteries replaced as specified by the manufacturer.</p>
-
-<h3>5.2 Fire Extinguishers</h3>
-<p>Portable fire extinguishers are designed for specific categories of fire. The correct extinguisher must be selected according to the fuel involved. Extinguishers should be accessible, properly maintained, and used only by trained individuals.</p>
-
-<h3>5.3 Automatic Sprinkler Systems</h3>
-<p>Automatic sprinkler systems can control or suppress many fires when properly designed and maintained. They reduce fire growth and provide additional evacuation time.</p>
-
-<h2>6. Emergency Evacuation and Preparedness</h2>
-<p>An effective emergency response plan helps occupants leave dangerous areas quickly and safely. Plans should include clearly marked exits, designated assembly points, procedures for alerting occupants, arrangements for those needing assistance, and regular evacuation drills. Elevators should generally not be used during fires.</p>
-
-<h2>7. Recommendations</h2>
-<ol>
-<li>Conduct regular fire risk assessments and update them when conditions change.</li>
-<li>Install suitable detection, alarm, and protection systems per applicable requirements.</li>
-<li>Arrange professional inspections of electrical systems and safety equipment.</li>
-<li>Keep emergency exits, corridors, and stairwells clear at all times.</li>
-<li>Store flammable materials safely and control ignition sources.</li>
-<li>Provide fire safety training and conduct evacuation drills.</li>
-<li>Maintain records of inspections, training, and corrective actions.</li>
-</ol>
-
-<h2>8. Conclusion</h2>
-<p>Fire safety is a shared responsibility involving building owners, employers, residents, and emergency services. A layered approach combining technical safeguards, management responsibilities, occupant education, and continuous improvement offers the most reliable path to reducing fire-related risks and protecting lives and property.</p>
-
-<div class="research-note">
-<strong>Research note:</strong> This article is a research-based educational review of established fire safety principles. Before academic submission, verify applicable standards and regulatory requirements for the relevant jurisdiction.
-</div>
-
+    <header class="whitepaper-masthead">
+        <div class="masthead-inner">
+            <div class="tech-brand">Safety<span>Archive</span></div>
+            <div class="paper-badge">Research Monograph</div>
+        </div>
+    </header>
+    <section class="whitepaper-hero">
+        <div class="hero-container">
+            <span class="doc-classification">Applied Safety Engineering</span>
+            <h1>Fire Safety: A Research-Based Guide to Fire Prevention, Risk Assessment, and Emergency Preparedness</h1>
+            <p>An integrated technical overview examining combustion science, industrial risk mitigation, early detection networks, and structured evacuation systems.</p>
+        </div>
+    </section>
+    <main class="paper-wrapper">
+        <article class="document-card">
+            <section class="abstract-panel">
+                <h3>Abstract</h3>
+                <p>Fire safety is an essential component of public health, occupational safety, and property protection. Fires can cause serious injuries, loss of life, environmental damage, and significant economic disruption. Effective fire safety requires a combination of preventive measures, risk assessment, emergency planning, fire detection systems, and public awareness. This research-based article examines the fundamental principles of fire safety, common causes of fires, preventive strategies, and emergency response procedures. It also explores the importance of fire safety education and the implementation of appropriate safety standards in residential, commercial, and industrial environments. The findings emphasize that a proactive approach to fire prevention, supported by regular inspections and practical training, can reduce fire-related risks and improve emergency preparedness.</p>
+            </section>
+            <h2>1. Introduction</h2>
+            <p>Fire has played an important role in human development, supporting activities such as cooking, heating, manufacturing, and energy production. However, uncontrolled fire remains a significant safety hazard in homes, workplaces, commercial buildings, and industrial facilities. A fire can spread rapidly, producing extreme heat, toxic smoke, and dangerous conditions that make evacuation difficult.</p>
+            <p><a href="https://nicofire.com/">Fire Safety</a> refers to the policies, procedures, equipment, and practices designed to prevent fires and minimize their consequences. It involves identifying potential hazards, maintaining electrical and heating systems, storing combustible materials safely, installing appropriate detection equipment, and preparing occupants to respond effectively during emergencies.</p>
+            <p>Modern fire safety management emphasizes prevention rather than relying exclusively on firefighting after an incident occurs. A well-designed safety program combines engineering controls, administrative procedures, employee training, and regular maintenance. These measures help create safer environments and support compliance with applicable fire codes and occupational safety requirements.</p>
+            <h2>2. Understanding the Science of Fire</h2>
+            <p>Fire is a combustion process that occurs when a combustible material reacts with an oxidizing agent, usually oxygen, in the presence of sufficient heat. The traditional fire triangle identifies three essential elements required for combustion:</p>
+            <ul>
+                <li><strong>Heat:</strong> An ignition source that raises a material to the temperature required for combustion.</li>
+                <li><strong>Fuel:</strong> A combustible substance, such as paper, wood, gasoline, cooking oil, or certain gases.</li>
+                <li><strong>Oxygen:</strong> An oxidizing agent that supports the combustion process.</li>
+            </ul>
+            <p>A fourth element, the chemical chain reaction, is included in the fire tetrahedron. Some extinguishing methods work by interrupting this reaction. Fire prevention involves controlling one or more of these elements.</p>
+            <h2>3. Common Causes of Fire Incidents</h2>
+            <p>Fire incidents can occur in almost any environment, but several hazards appear repeatedly in fire investigations.</p>
+            <h3>3.1 Electrical Faults</h3>
+            <p>Damaged wiring, overloaded circuits, defective electrical appliances, loose connections, and improperly installed equipment can generate heat or sparks. Electrical installations should be inspected by qualified professionals.</p>
+            <h3>3.2 Cooking-Related Fires</h3>
+            <p>Cooking equipment is a common source of residential fire hazards. Unattended cooking, overheating oil, grease accumulation, and combustible materials placed near burners can cause fires.</p>
+            <h3>3.3 Heating Equipment and Open Flames</h3>
+            <p>Portable heaters, fireplaces, candles, and other open-flame sources can ignite nearby combustible materials. Heaters should be positioned according to manufacturer instructions.</p>
+            <h2>4. Fire Risk Assessment and Prevention</h2>
+            <p>Fire risk assessment is a systematic process for identifying hazards, evaluating the likelihood and potential consequences of a fire, and determining appropriate control measures:</p>
+            <ol>
+                <li><strong>Identify fire hazards:</strong> Examine electrical systems, heating equipment, cooking areas, and combustible materials.</li>
+                <li><strong>Identify people at risk:</strong> Consider employees, residents, visitors, and those needing evacuation assistance.</li>
+                <li><strong>Evaluate existing controls:</strong> Check alarms, detectors, extinguishers, emergency lighting, and exit routes.</li>
+                <li><strong>Determine additional measures:</strong> Introduce safeguards to eliminate hazards.</li>
+                <li><strong>Document and review:</strong> Record findings and reassess after changes.</li>
+            </ol>
+            <h2>5. Fire Detection and Protection Systems</h2>
+            <h3>5.1 Smoke and Heat Detectors</h3>
+            <p>Smoke alarms provide early warning when smoke enters the sensing chamber. They must be tested regularly, with batteries replaced as specified.</p>
+            <h3>5.2 Fire Extinguishers</h3>
+            <p>Portable fire extinguishers are designed for specific categories of fire. The correct extinguisher must be selected according to the fuel involved.</p>
+            <div class="hazard-note-box">
+                <h4>Life Safety Protocol</h4>
+                <p>An extinguisher should never be used as a reason to delay evacuation. If a fire is growing, evacuate immediately and contact emergency services.</p>
+            </div>
+            <h2>6. Emergency Evacuation and Preparedness</h2>
+            <p>An effective emergency response plan helps occupants leave dangerous areas quickly and safely. Plans should include clearly marked exits, designated assembly points, and regular evacuation drills.</p>
+            <p>The design and operation of industrial fire protection systems should be based on qualified engineering assessments. Furthermore, regionally tailored initiatives—such as advancing structural <a href="https://nicofire.com/">Fire safety in Nepal</a> and other rapidly urbanizing regions—highlight the necessity of enforcing local building codes alongside international standards.</p>
+            <h2>7. Recommendations</h2>
+            <ol>
+                <li>Conduct regular fire risk assessments and update them when conditions change.</li>
+                <li>Install suitable detection, alarm, and protection systems.</li>
+                <li>Arrange professional inspections of electrical systems and safety equipment.</li>
+                <li>Keep emergency exits, corridors, and stairwells clear at all times.</li>
+                <li>Store flammable materials safely and control ignition sources.</li>
+                <li>Provide fire safety training and conduct evacuation drills.</li>
+                <li>Maintain records of inspections, training, and corrective actions.</li>
+            </ol>
+            <div class="synthesis-card">
+                <h3>8. Conclusion</h3>
+                <p>Fire safety is a shared responsibility involving building owners, employers, residents, employees, safety professionals, and emergency services. Effective prevention requires understanding fire behavior, identifying hazards, maintaining protection systems, and planning for emergencies.</p>
+                <p>Although no single measure can eliminate every fire risk, a layered approach can reduce the likelihood of fire incidents and limit their potential consequences. Regular maintenance, practical training, and continuous review are essential.</p>
+                <p>Research note: This article is a research-based educational review, not an original peer-reviewed study. Before academic submission, verify applicable standards and citation details.</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2026 SafetyArchive. Educational research monograph on institutional risk assessment and fire prevention.</p>
+    </footer>
 </body>
 </html>
